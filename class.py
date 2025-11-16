@@ -28,22 +28,21 @@ class Location:
 
 class Route:
     def __init__(self, route_id, loc_id, __destination):
-        self.__id = route_id
+        self.route_id = route_id
         self.loc_id = loc_id
         self.destination = __destination
 
-    def get_id(self):
-        return self.__id
+
 
 
 
 class Order:
-    def __init__(self, order_id, driver_id, __name, client_id, route_id, __price, __CLname):
-        self.__id = order_id
-        self.__driver_id = driver_id
+    def __init__(self, __order_id, driver_id, __name, __client_id, route_id, __price, __CLname):
+        self.order_id = __order_id
+        self.driver_id = driver_id
         self.name = __name
-        self.__client_id = client_id
+        self.client_id = __client_id
         self.CLname = __CLname
-        self.__route_id = route_id
+        self.route_id = route_id
         self.price = __price
 
